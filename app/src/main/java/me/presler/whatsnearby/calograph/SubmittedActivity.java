@@ -1,19 +1,17 @@
 package me.presler.whatsnearby.calograph;
 
-        import android.app.Activity;
-        import android.content.Intent;
-        import android.os.Bundle;
-        import android.view.Menu;
-        import android.view.MenuItem;
-        import android.view.View;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 
-public class MainActivity extends Activity {
+public class SubmittedActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_submitted);
     }
 
 
@@ -37,10 +35,5 @@ public class MainActivity extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void onSubmitButton(View view) {
-        Intent intent = new Intent(MainActivity.this, SubmittedActivity.class);
-        startActivity(intent);
     }
 }
